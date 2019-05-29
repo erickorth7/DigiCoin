@@ -1,0 +1,6 @@
+module Pods_DigiCoin_Ticker {
+  umbrella header "Pods-DigiCoin Ticker-umbrella.h"
+
+  export *
+  module * { export * }
+}

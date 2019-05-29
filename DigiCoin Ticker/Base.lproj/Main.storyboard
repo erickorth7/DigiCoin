@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,50 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigiCoin_Ticker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DigiCoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-8u-rsL">
+                                <rect key="frame" x="95" y="69" width="185" height="65"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="47"/>
+                                <color key="textColor" red="1" green="0.6706059718212305" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-uF-Opf">
+                                <rect key="frame" x="8" y="185" width="359" height="52"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-Ix-JWc">
+                                <rect key="frame" x="0.0" y="337" width="430" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031857655539855728" green="0.54367103748730095" blue="0.86780028772791873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1fD-8u-rsL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="9Jh-qg-LDL"/>
+                            <constraint firstItem="Sif-Ix-JWc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ESc-hW-ZaY"/>
+                            <constraint firstItem="Sif-Ix-JWc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Klj-tI-OSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fD-8u-rsL" secondAttribute="trailing" constant="95" id="NYc-mg-BzN"/>
+                            <constraint firstItem="Si9-uF-Opf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="RKT-aq-kKG"/>
+                            <constraint firstItem="Si9-uF-Opf" firstAttribute="top" secondItem="1fD-8u-rsL" secondAttribute="bottom" constant="51" id="S9R-7k-67R"/>
+                            <constraint firstItem="Sif-Ix-JWc" firstAttribute="top" secondItem="Si9-uF-Opf" secondAttribute="bottom" constant="100" id="fxZ-O9-iCh"/>
+                            <constraint firstItem="1fD-8u-rsL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="jDT-Gb-ZfY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Si9-uF-Opf" secondAttribute="trailing" constant="8" id="oYS-2p-haX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sif-Ix-JWc" secondAttribute="bottom" constant="114" id="reo-FH-dKl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currencyPicker" destination="Sif-Ix-JWc" id="AEf-4A-wj1"/>
+                        <outlet property="valueLabel" destination="Si9-uF-Opf" id="QiZ-Rs-fYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="297" y="58"/>
         </scene>
     </scenes>
 </document>

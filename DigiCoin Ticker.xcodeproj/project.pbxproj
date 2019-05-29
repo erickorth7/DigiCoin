@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34EFAB974A839EA3FCC370EE /* libPods-DigiCoin Ticker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3EA4DAB9B381AFFE497023 /* libPods-DigiCoin Ticker.a */; };
 		60024E51229EAB5F00EA61D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60024E50229EAB5F00EA61D4 /* AppDelegate.swift */; };
 		60024E53229EAB5F00EA61D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60024E52229EAB5F00EA61D4 /* ViewController.swift */; };
 		60024E56229EAB5F00EA61D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60024E54229EAB5F00EA61D4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41308F3617CC01728652D2A8 /* Pods-DigiCoin Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiCoin Ticker.release.xcconfig"; path = "Target Support Files/Pods-DigiCoin Ticker/Pods-DigiCoin Ticker.release.xcconfig"; sourceTree = "<group>"; };
 		60024E4D229EAB5F00EA61D4 /* DigiCoin Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DigiCoin Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60024E50229EAB5F00EA61D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60024E52229EAB5F00EA61D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		60024E57229EAB6200EA61D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60024E5A229EAB6200EA61D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60024E5C229EAB6200EA61D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DAC31C9D30B024B2E51D29 /* Pods-DigiCoin Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiCoin Ticker.debug.xcconfig"; path = "Target Support Files/Pods-DigiCoin Ticker/Pods-DigiCoin Ticker.debug.xcconfig"; sourceTree = "<group>"; };
+		DB3EA4DAB9B381AFFE497023 /* libPods-DigiCoin Ticker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigiCoin Ticker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EFAB974A839EA3FCC370EE /* libPods-DigiCoin Ticker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4F34EE149E86BC75A1ED99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB3EA4DAB9B381AFFE497023 /* libPods-DigiCoin Ticker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60024E44229EAB5F00EA61D4 = {
 			isa = PBXGroup;
 			children = (
 				60024E4F229EAB5F00EA61D4 /* DigiCoin Ticker */,
 				60024E4E229EAB5F00EA61D4 /* Products */,
+				B0550DA200606492E54CE34A /* Pods */,
+				1C4F34EE149E86BC75A1ED99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = "DigiCoin Ticker";
 			sourceTree = "<group>";
 		};
+		B0550DA200606492E54CE34A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAC31C9D30B024B2E51D29 /* Pods-DigiCoin Ticker.debug.xcconfig */,
+				41308F3617CC01728652D2A8 /* Pods-DigiCoin Ticker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60024E5F229EAB6200EA61D4 /* Build configuration list for PBXNativeTarget "DigiCoin Ticker" */;
 			buildPhases = (
+				8746059AB970B47590993782 /* [CP] Check Pods Manifest.lock */,
 				60024E49229EAB5F00EA61D4 /* Sources */,
 				60024E4A229EAB5F00EA61D4 /* Frameworks */,
 				60024E4B229EAB5F00EA61D4 /* Resources */,
+				A814723A03952ACDA1BFEE23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8746059AB970B47590993782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigiCoin Ticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A814723A03952ACDA1BFEE23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigiCoin Ticker/Pods-DigiCoin Ticker-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigiCoin Ticker/Pods-DigiCoin Ticker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60024E49229EAB5F00EA61D4 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		60024E60229EAB6200EA61D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DAC31C9D30B024B2E51D29 /* Pods-DigiCoin Ticker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		60024E61229EAB6200EA61D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41308F3617CC01728652D2A8 /* Pods-DigiCoin Ticker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
